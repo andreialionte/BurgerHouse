@@ -1,0 +1,69 @@
+@import "./banner.avif";
+
+$blackGrayColor: #1f1f1f;
+$BannerColor: #F0E68C;
+$BannerImage: url(banner.avif);
+
+.header-wrapper {
+    background-color: $BannerColor;
+    overflow: hidden;
+  }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 20px;
+  position: relative;
+
+
+button {
+  border: 0;
+  text-decoration: 0;
+  white-space: nowrap;
+  background-color: #FEBE10;
+  border-radius: 20px;
+  font-size: 30px;
+  padding: 8px 40px;
+  cursor: pointer;
+  color: black;
+  font-weight: 800;
+}
+h1{
+    color: black;
+    font-weight: 800;
+}
+}
+
+.banner{
+display: flex;
+background-image: $BannerImage;
+background-size:cover;
+width: auto;
+height: 500px;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: -280px;
+      
+
+h1, p{
+    color: white;
+}
+
+p{
+    font-size: 20px;    
+}
+
+}
