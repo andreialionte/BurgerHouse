@@ -1,8 +1,10 @@
-@import "./banner.avif";
+
 
 $blackGrayColor: #1f1f1f;
 $BannerColor: #F0E68C;
 $BannerImage: url(banner.avif);
+$warmRed: #BA0021;
+$focusRed: #E32636;
 
 .header-wrapper {
     background-color: $BannerColor;
@@ -15,7 +17,7 @@ $BannerImage: url(banner.avif);
   align-items: center;
   text-align: center;
   color: white;
-  margin: 20px;
+  padding: 1px 40px;
   position: relative;
 
 
@@ -25,7 +27,7 @@ button {
   white-space: nowrap;
   background-color: #FEBE10;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 25px;
   padding: 8px 40px;
   cursor: pointer;
   color: black;
@@ -66,4 +68,49 @@ p{
     font-size: 20px;    
 }
 
+}
+
+.meals{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    padding: 5px;
+
+
+    h1{
+      margin: 0;
+      padding: 2px 20px;
+    }
+    p{
+      margin: 0;
+      padding: 2px 20px;
+      font-style: italic;
+    }
+}
+
+.meals2{
+display: flex;
+justify-content: flex-end;
+  input{
+    width: 15px;
+    height: 15px;
+    display: flex;
+  }
+  button{
+    border: none;
+    background-color: $warmRed;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    &:active{
+      background-color: $focusRed;
+    }
+  }
 }
